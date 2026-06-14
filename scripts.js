@@ -104,11 +104,23 @@
     lucide.createIcons();
   }
 
+  /* ─── FAQ Toggle ─── */
+  document.querySelectorAll('[data-faq]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      this.parentElement.classList.toggle('open');
+    });
+  });
+
   /* ─── Smooth Scroll ─── */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
-      var target = document.querySelector(this.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var href = this.getAttribute('href');
+      if (!href || href === '#') return;
+      var target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 })();

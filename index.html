@@ -55,7 +55,7 @@
 <header class="nav" role="banner">
   <nav class="nav-inner" aria-label="Navegación principal">
     <a href="index.html" class="nav-brand">
-      <img src="logo.png" alt="LEVITAR" class="nav-logo">
+      <img src="logo.png" alt="LEVITAR" class="nav-logo" width="24" height="24">
       LEVITAR
     </a>
     <div class="nav-links">
@@ -99,8 +99,8 @@
     <div class="hero-orb"></div>
     <div class="hero-orb-2"></div>
   </div>
-  <div class="container" style="position:relative;z-index:2;width:100%">
-    <div class="reveal" style="max-width:52rem">
+  <div class="container" style="position:relative;z-index:2">
+    <div class="reveal max-w-xl">
       <span class="tag">Estudio de sistemas digitales</span>
       <h1 class="hero-title">
         Diseñamos sistemas para que<br>
@@ -155,19 +155,19 @@
 <!-- ═══════ QUÉ ES LEVITAR ═══════ -->
 <section class="section" id="que-es" aria-label="Qué es LEVITAR">
   <div class="container">
-    <div class="reveal" style="max-width:44rem;text-align:center;margin:0 auto">
-      <span class="tag" style="justify-content:center">Qué es LEVITAR</span>
-      <h2 class="section-title">No vendemos servicios aislados.<br>Diseñamos sistemas completos.</h2>
-      <p class="section-desc" style="max-width:36rem;margin:1rem auto 0">
+    <div class="reveal max-w-lg mx-auto text-center">
+      <span class="tag mx-auto">Qué es LEVITAR</span>
+      <h2 class="section-title text-balance">No vendemos servicios aislados.<br>Diseñamos sistemas completos.</h2>
+      <p class="section-desc max-w-md mx-auto" style="margin-top:1rem">
         Las empresas modernas están rodeadas de herramientas, plataformas y canales de comunicación. Sin embargo, la mayoría sigue enfrentando el mismo problema: operaciones complejas, procesos desconectados y crecimiento difícil de sostener.
       </p>
-      <p class="section-desc" style="max-width:36rem;margin:1.5rem auto 0">
+      <p class="section-desc max-w-md mx-auto" style="margin-top:1.5rem">
         LEVITAR nace para resolver esa brecha. Diseñamos sistemas que conectan tecnología, marketing y personas para transformar negocios en organizaciones más simples, eficientes y preparadas para el futuro.
       </p>
     </div>
 
     <div class="reveal delay-1" style="margin-top:3.5rem">
-      <div class="services-grid" style="grid-template-columns:1fr;max-width:36rem;margin:0 auto">
+      <div class="services-grid max-w-md mx-auto">
         <div class="fi" style="font-size:0.9375rem;padding:0.75rem 0"><span class="material-symbols-outlined fi-icon" style="font-variation-settings:'FILL'1">strategy</span><span><strong>Estrategia</strong> &mdash; Diagnóstico real, hoja de ruta clara, objetivos medibles.</span></div>
         <div class="fi" style="font-size:0.9375rem;padding:0.75rem 0;border-top:1px solid var(--border-light)"><span class="material-symbols-outlined fi-icon" style="font-variation-settings:'FILL'1">palette</span><span><strong>Diseño</strong> &mdash; Identidad de marca, experiencia de usuario, interfaces premium.</span></div>
         <div class="fi" style="font-size:0.9375rem;padding:0.75rem 0;border-top:1px solid var(--border-light)"><span class="material-symbols-outlined fi-icon" style="font-variation-settings:'FILL'1">terminal</span><span><strong>Tecnología</strong> &mdash; Desarrollo web, sistemas de gestión, integraciones.</span></div>
@@ -181,20 +181,25 @@
 <!-- ═══════ FILOSOFÍA ═══════ -->
 <section class="section section-alt" id="filosofia" aria-label="Filosofía">
   <div class="container">
-    <div class="reveal" style="max-width:40rem;margin:0 auto">
-      <span class="tag" style="justify-content:center">Filosofía</span>
-      <h2 class="section-title" style="text-align:center">Creemos en hacer mejor, no en hacer más.</h2>
+    <div class="reveal max-w-lg mx-auto text-center">
+      <span class="tag mx-auto">Filosofía</span>
+      <h2 class="section-title text-balance">Creemos en hacer mejor, no en hacer más.</h2>
     </div>
-    <div class="reveal delay-1" style="margin-top:2.5rem;max-width:34rem;margin-left:auto;margin-right:auto">
-      <blockquote style="font-size:1.25rem;line-height:1.7;color:var(--ink-soft);border-left:3px solid var(--primary);padding-left:1.5rem;margin-bottom:2rem">
-        &ldquo;Cada sitio web, cada estrategia, cada automatización y cada sistema que construimos tiene un único propósito: reducir la fricción y aumentar la capacidad de crecer.&rdquo;
-      </blockquote>
-      <blockquote style="font-size:1.25rem;line-height:1.7;color:var(--ink-soft);border-left:3px solid var(--primary);padding-left:1.5rem;margin-bottom:2rem">
-        &ldquo;No perseguimos tendencias. Diseñamos estructuras que permanecen.&rdquo;
-      </blockquote>
-      <blockquote style="font-size:1.25rem;line-height:1.7;color:var(--ink-soft);border-left:3px solid var(--primary);padding-left:1.5rem">
-        &ldquo;No vendemos servicios aislados. Construimos ecosistemas donde cada parte trabaja en conjunto.&rdquo;
-      </blockquote>
+    <div class="reveal delay-1" style="margin-top:2.5rem">
+      <div class="services-grid max-w-lg mx-auto">
+        <blockquote class="philosophy-quote">
+          <span class="philosophy-icon">“</span>
+          <p class="philosophy-text">Cada sitio web, cada estrategia, cada automatización y cada sistema que construimos tiene un único propósito: reducir la fricción y aumentar la capacidad de crecer.</p>
+        </blockquote>
+        <blockquote class="philosophy-quote">
+          <span class="philosophy-icon">“</span>
+          <p class="philosophy-text">No perseguimos tendencias. Diseñamos estructuras que permanecen.</p>
+        </blockquote>
+        <blockquote class="philosophy-quote">
+          <span class="philosophy-icon">“</span>
+          <p class="philosophy-text">No vendemos servicios aislados. Construimos ecosistemas donde cada parte trabaja en conjunto.</p>
+        </blockquote>
+      </div>
     </div>
     <div class="reveal delay-2" style="margin-top:2.5rem;text-align:center">
       <a href="about.html" class="btn btn-outline btn-lg">
@@ -208,8 +213,8 @@
 <!-- ═══════ SISTEMA LEVITAR ═══════ -->
 <section class="section" id="sistema" aria-label="Sistema LEVITAR">
   <div class="container">
-    <div class="reveal section-head" style="text-align:center;max-width:36rem;margin-left:auto;margin-right:auto">
-      <span class="tag" style="justify-content:center">El Sistema LEVITAR</span>
+    <div class="reveal section-head mx-auto text-center max-w-md">
+      <span class="tag mx-auto">El Sistema LEVITAR</span>
       <h2 class="section-title">Metodología propia para resultados predecibles</h2>
       <p class="section-desc">Cinco etapas diseñadas para minimizar riesgos y garantizar que cada componente funcione en sincronía.</p>
     </div>
@@ -262,13 +267,13 @@
 <!-- ═══════ CAPACIDADES ═══════ -->
 <section class="section section-alt" id="capacidades" aria-label="Capacidades">
   <div class="container">
-    <div class="reveal section-head" style="text-align:center;max-width:36rem;margin-left:auto;margin-right:auto">
-      <span class="tag" style="justify-content:center">Capacidades</span>
-      <h2 class="section-title">Todo lo que necesitás para escalar, en un solo lugar</h2>
+    <div class="reveal section-head mx-auto text-center max-w-md">
+      <span class="tag mx-auto">Capacidades</span>
+      <h2 class="section-title text-balance">Todo lo que necesitás para escalar, en un solo lugar</h2>
       <p class="section-desc">No tercerizamos piezas sueltas. Diseñamos el sistema completo que tu negocio necesita para crecer sin desorden.</p>
     </div>
 
-    <div class="services-grid" style="grid-template-columns:1fr 1fr 1fr;gap:1rem">
+    <div class="capacities-grid">
       <article class="card" style="padding:1.5rem;text-align:center;border:none;background:var(--primary-subtle)">
         <span class="material-symbols-outlined" style="font-size:2rem;color:var(--primary);display:block;margin-bottom:0.75rem">web</span>
         <h3 style="font-size:1rem;margin-bottom:0.375rem">Diseño web</h3>
@@ -313,9 +318,9 @@
 <!-- ═══════ CASOS ═══════ -->
 <section class="section" id="casos" aria-label="Casos reales">
   <div class="container">
-    <div class="reveal section-head" style="text-align:center;max-width:36rem;margin-left:auto;margin-right:auto">
-      <span class="tag" style="justify-content:center">Casos reales</span>
-      <h2 class="section-title">Resultados de empresas que confiaron en LEVITAR</h2>
+    <div class="reveal section-head mx-auto text-center max-w-md">
+      <span class="tag mx-auto">Casos reales</span>
+      <h2 class="section-title text-balance">Resultados de empresas que confiaron en LEVITAR</h2>
       <p class="section-desc">Cada proyecto es único. Estos son algunos ejemplos de cómo diseñamos sistemas que generan resultados concretos.</p>
     </div>
 
@@ -348,39 +353,39 @@
 <!-- ═══════ FAQ ═══════ -->
 <section class="section section-alt" id="faq" aria-label="Preguntas frecuentes">
   <div class="container">
-    <div class="reveal section-head" style="text-align:center;max-width:36rem;margin-left:auto;margin-right:auto">
-      <span class="tag" style="justify-content:center">FAQ</span>
+    <div class="reveal section-head mx-auto text-center max-w-md">
+      <span class="tag mx-auto">FAQ</span>
       <h2 class="section-title">Preguntas frecuentes</h2>
       <p class="section-desc">Respuestas a las dudas más comunes sobre cómo trabajamos.</p>
     </div>
 
-    <div class="reveal delay-1" style="max-width:36rem;margin:0 auto">
+    <div class="reveal delay-1 max-w-md mx-auto">
       <div class="faq-list">
         <div class="faq-item">
-          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          <button class="faq-question" data-faq>
             ¿Cuánto dura un proyecto típico con LEVITAR?
-            <span class="icon">+</span>
+            <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">La mayoría de los proyectos se completan en 3 a 5 semanas. Durante la etapa de diagnóstico definimos un cronograma detallado con hitos y fechas estimadas.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          <button class="faq-question" data-faq>
             ¿Necesito tener conocimientos técnicos?
-            <span class="icon">+</span>
+            <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">No. Nos encargamos de toda la parte técnica. De tu lado solo necesitamos información clara sobre tu negocio y feedback durante el proceso.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          <button class="faq-question" data-faq>
             ¿Qué incluye exactamente cada proyecto?
-            <span class="icon">+</span>
+            <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">Todo proyecto incluye diagnóstico, dise&ntilde;o de la soluci&oacute;n, implementaci&oacute;n, capacitaci&oacute;n del equipo y soporte post-entrega. Los detalles var&iacute;an seg&uacute;n el alcance, que definimos juntos al inicio.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          <button class="faq-question" data-faq>
             ¿Cómo se manejan los pagos?
-            <span class="icon">+</span>
+            <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">Trabajamos con un esquema 50% al inicio y 50% previo a la entrega final. Aceptamos transferencia bancaria. Los precios se expresan en pesos argentinos con validez de 30 d&iacute;as.</div>
         </div>
@@ -392,12 +397,12 @@
 <!-- ═══════ CONTACTO ═══════ -->
 <section class="section" id="contacto" aria-label="Contacto">
   <div class="container">
-    <div class="reveal" style="text-align:center;max-width:36rem;margin:0 auto">
-      <span class="tag" style="justify-content:center">Contacto</span>
+    <div class="reveal mx-auto text-center max-w-md">
+      <span class="tag mx-auto">Contacto</span>
       <h2 class="section-title">Construyamos algo preparado para durar</h2>
       <p class="section-desc" style="margin-bottom:2rem">Contanos tu situación y recibí un diagnóstico inicial sin compromiso. En menos de 48 horas te enviamos una propuesta clara.</p>
     </div>
-    <div class="contact-grid" style="grid-template-columns:1fr 1fr">
+    <div class="contact-grid">
       <div class="reveal delay-1">
         <div class="contact-card" style="text-align:left;padding:2.5rem">
           <form class="contact-form" id="contactForm" novalidate>
