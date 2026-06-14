@@ -59,7 +59,7 @@
           var id = entry.target.getAttribute('id');
           navLinks.forEach(function (link) {
             var href = link.getAttribute('href');
-            if (href === '#' + id) {
+            if (href === '#' + id || href.endsWith('#' + id)) {
               link.classList.add('active');
             } else {
               link.classList.remove('active');

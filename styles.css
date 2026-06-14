@@ -43,6 +43,7 @@ h1,h2,h3,h4{font-family:'Instrument Sans','system-ui',sans-serif;font-weight:600
 @media(min-width:768px){.container{padding:0 2.5rem}}
 .section{padding:5rem 0}
 .section-alt{background:var(--white)}
+.section-dark{background:var(--ink);color:var(--white)}
 .section-head{max-width:32rem;margin-bottom:3.5rem}
 .section-title{font-size:clamp(2rem,3.5vw,3rem);margin-bottom:0.75rem}
 .section-desc{font-size:1rem;line-height:1.6;color:var(--ink-soft)}
