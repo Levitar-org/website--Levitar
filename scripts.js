@@ -1,7 +1,6 @@
 (function () {
   'use strict';
 
-  /* ─── Mobile Menu ─── */
   var hamburger = document.querySelector('.nav-hamburger');
   var mobileMenu = document.querySelector('.mobile-menu');
   var mobileMenuClose = document.querySelector('.mobile-menu-close');
@@ -30,7 +29,6 @@
     });
   }
 
-  /* ─── Scroll Reveal ─── */
   var revealElements = document.querySelectorAll('.reveal');
   if (revealElements.length > 0) {
     var revealObserver = new IntersectionObserver(
@@ -49,7 +47,6 @@
     });
   }
 
-  /* ─── Active Nav Link on Scroll ─── */
   var sections = document.querySelectorAll('section[id]');
   var navLinks = document.querySelectorAll('.nav-link');
   if (sections.length > 0 && navLinks.length > 0) {
@@ -71,7 +68,6 @@
     sections.forEach(function (s) { navObserver.observe(s); });
   }
 
-  /* ─── Form Handler ─── */
   var contactForm = document.getElementById('contactForm');
   var formSuccess = document.getElementById('formSuccess');
   if (contactForm) {
@@ -84,12 +80,12 @@
       var needs = [];
       document.querySelectorAll('input[name="need"]:checked').forEach(function (cb) { needs.push(cb.nextElementSibling.textContent.trim()); });
       var message = document.getElementById('formMessage').value.trim();
-      var subject = encodeURIComponent('Consulta de ' + name + ' — ' + business);
+      var subject = encodeURIComponent('Consulta de ' + name + ' \u2014 ' + business);
       var body = encodeURIComponent(
         'Nombre: ' + name + '\n' +
         'Negocio: ' + business + '\n' +
         'Email: ' + email + '\n' +
-        'Teléfono: ' + phone + '\n' +
+        'Tel\u00e9fono: ' + phone + '\n' +
         'Necesita: ' + (needs.length > 0 ? needs.join(', ') : 'No especificado') + '\n' +
         'Mensaje: ' + (message || 'Sin mensaje')
       );
@@ -99,19 +95,12 @@
     });
   }
 
-  /* ─── Lucide Icons ─── */
-  if (typeof lucide !== 'undefined') {
-    lucide.createIcons();
-  }
-
-  /* ─── FAQ Toggle ─── */
   document.querySelectorAll('[data-faq]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       this.parentElement.classList.toggle('open');
     });
   });
 
-  /* ─── Smooth Scroll ─── */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       var href = this.getAttribute('href');
